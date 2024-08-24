@@ -1,32 +1,33 @@
-# ジェネバ機構をTinkercadでプログラミングしてつくろう！
+# Let's Program and create a Geneva Drive in Tinkercad!
 
-**[ジェネバ機構をTinkercadでプログラミングしてつくろう！](https://champierre.github.io/geneva-drive/)**
+**[Let's Program and create a Geneva Drive in Tinkercad!](https://champierre.github.io/geneva-drive-en/)**
 
-ジェネバ機構は、連続で回転する運動を、少しずつ断続的に回転する運動に変えることができる機構です。
+A Geneva drive is a mechanism that can convert continuous rotational motion into intermittent rotational motion.
 
-このスライドでは、ジェネバ機構の3Dモデルを、Tinkercadのコードブロックを使い、プログラミングしてつくる方法を紹介しています。
+This slide presents a method to program and create a 3D model of a Geneva drive using Tinkercad codeblock.
 
-![geneva-drive-demo-short](https://champierre.github.io/geneva-drive/geneva_drive_demo_short.gif)
+![geneva-drive-demo-short](https://champierre.github.io/geneva-drive-en/geneva_drive_demo_short.gif)
 
-STLファイルとしてエクスポートすれば、3Dプリンターで出力することができます。
+Once exported as an STL file, it can be printed using a 3D printer.
 
 <a href="https://youtube.com/shorts/Ud-0BkLBQJY"><img src="https://champierre.github.io/geneva-drive/geneva_drive.jpg" style="width: 300px;"></a>
 
-<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"><img src="https://champierre.github.io/geneva-drive/by-sa.webp" style="width: 10%"></a>
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)にしたがって公開します。
+<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img src="https://champierre.github.io/geneva-drive/by-sa.webp" style="width: 10%"></a>
 
-リミックス、間違いの指摘、改善提案など歓迎します。
+Published under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
 
-## 自分のマシンでスライドを開くには
+Remixes, corrections, and suggestions for improvement are welcome.
+
+## To Open the Slides on Your Own Machine
 
 ```
-git clone git@github.com:champierre/geneva-drive.git
+git clone git@github.com:champierre/geneva-drive-en.git
 npm install
 npm run dev
 ```
 
-を実行し、http://localhost:3030 をブラウザで開く。
+Run the above commands and open http://localhost:3030 in your browser.
 
-slides.md がスライドの中身です。
+The content of the slides can be found in slides.md.
 
-Slidevについては[documentations](https://sli.dev/)を参考にしてください。
+For more information on Slidev, refer to the [documentation](https://sli.dev/).
