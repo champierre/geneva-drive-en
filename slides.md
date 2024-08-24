@@ -1,28 +1,27 @@
-# ジェネバ機構をTinkercadでプログラミングしてつくろう！
+# Let's Program and Create a Geneva Drive in Tinkercad!
 
 
-<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"><img src="/by-sa.webp" style="width: 10%"></a>
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)にしたがって公開します。
+Published under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img src="/by-sa.webp" style="width: 10%"></a> [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
 
-<kbd>←</kbd> で戻る。<kbd>→</kbd> で進む。
+<kbd>←</kbd> Go back. <kbd>→</kbd> Move forward.
 
 ---
 
-# ジェネバ機構とは？
+# What is a Geneva Drive?
 
-ジェネバ機構は、連続で回転する運動を、少しずつ断続的に回転する運動に変えることができる機構です。
+The Geneva drive is a mechanism that can convert continuous rotational motion into intermittent rotational motion.
 
 <div class="flex justify-center">
 　　<img src="/Geneva_mechanism_6spoke_animation.gif" style="width: 50%">
 </div>
 
-<small>画像: ジェネバ機構. (2023, August 28). In Wikipedia. https://ja.wikipedia.org/wiki/%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%90%E6%A9%9F%E6%A7%8B</small>
+<small>Geneva drive. (2024, July 31). In Wikipedia. https://en.wikipedia.org/wiki/Geneva_drive</small>
 
 ---
 
-# Tinkercadでプログラミングしてつくろう
+# Let's Program in Tinkercad
 
-ジェネバ機構の3Dモデルを、Tinkercadのコードブロックを使い、プログラミングしてつくってみましょう。
+Let’s create a 3D model of a Geneva drive using Codeblocks in Tinkercad.
 
 <div class="flex justify-center">
 　　<img src="/geneva_drive_demo.gif" style="width: 80%">
