@@ -102,7 +102,7 @@ When the distance between the centers of the drive and driven wheels is 30mm, th
 
 The radius at the top part of the drive wheel is determined by drawing a perpendicular from the pin to the line connecting the centers of the drive and driven wheels, adding the radius of the pin.
 
-In the case of a right triangle with angles of 90, 45, and 45 degrees, this length is half of the longest side plus the radius of the pin, resulting in 15mm + 'pin radius'.
+In the case of a right triangle with angles of 90, 45, and 45 degrees, this length is half of the longest side plus the radius of the pin, resulting in 15mm + <span class="variable">pin radius</span>.
 
 <div class="flex justify-center">
 　　<img src="/drive_wheel_top_radius.png" style="width: 30%">
@@ -115,7 +115,7 @@ In the case of a right triangle with angles of 90, 45, and 45 degrees, this leng
 
 Let's review the initial setup process once more based on the relative positions of each part.
 
-Click the '+ Create' button in Tinkercad, select 'Codeblocks' and create the following initialization process.
+Click the **+ Create** button in Tinkercad, select **Codeblocks** and create the following initialization process.
 
 <div class="flex justify-center">
 　　<img src="/initialization.png" style="width: 80%">
@@ -127,7 +127,7 @@ Click the '+ Create' button in Tinkercad, select 'Codeblocks' and create the fol
 
 Next, let's create the top part of the drive wheel.
 
-Create a circular section with a radius of 'drive wheel top radius' and subtract a circular section with a radius of 'driven wheel radius' + 'margin' separated by the distance of 'centers distance(30mm)', then lift it up to a height of 5mm.
+Create a circular section with a radius of <span class="variable">drive wheel top radius</span> and subtract a circular section with a radius of <span class="variable">driven wheel radius</span> + <span class="variable">margin</span> separated by the distance of <span class="variable">centers distance</span>(30mm), then lift it up to a height of 5mm.
 
 <div class="flex justify-center">
 　　<img src="/drive_wheel_top.gif" style="width: 70%">
@@ -139,7 +139,7 @@ Create a circular section with a radius of 'drive wheel top radius' and subtract
 
 Next, let's create the bottom part of the drive wheel.
 
-Create a circular section with a radius of 'drive wheel bottom radius', and at a distance equal to the 'drive wheel bottom radius', create a cylinder with a radius of 'pin radius'. Both are lifted to a height of 0mm (base).
+Create a circular section with a radius of <span class="variable">drive wheel bottom radius</span>, and at a distance equal to the <span class="variable">drive wheel bottom radius</span>, create a cylinder with a radius of <span class="variable">pin radius</span>. Both are lifted to a height of 0mm (base).
 
 <div class="flex justify-center">
 　　<img src="/drive_wheel_bottom.gif" style="width: 70%">
@@ -149,9 +149,9 @@ Create a circular section with a radius of 'drive wheel bottom radius', and at a
 
 # Creating a Hole at the Center of the Drive Wheel
 
-Create a hole in the center of the drive wheel with a radius of 'center pin radius' + ('margin' / 2).
+Create a hole in the center of the drive wheel with a radius of <span class="variable">center pin radius</span> + (<span class="variable">margin</span> / 2).
 
-Then, to avoid interference, move the driven wheel sideways by the 'driven wheel radius' + 'margin'.
+Then, to avoid interference, move the driven wheel sideways by the <span class="variable">driven wheel radius</span> + <span class="variable">margin</span>.
 
 <div class="flex justify-center">
 　　<img src="/drive_wheel_center.gif" style="width: 70%">
@@ -163,7 +163,7 @@ Then, to avoid interference, move the driven wheel sideways by the 'driven wheel
 
 Now, let's create the driven wheel.
 
-First, create a large disc with a radius of 'centers distance' + 'drive wheel top radius' + 'margin', submerged below the base so that it does does not interfere with the creation of other parts. Next, arrange four small discs in a cross shape with a radius of 'drive wheel top radius' + 'margin'. The large disc was created first to allow the small discs to rotate around the origin, not their centers.
+First, create a large disc with a radius of <span class="variable">centers distance</span> + <span class="variable">drive wheel top radius</span> + <span class="variable">margin</span>, submerged below the base so that it does does not interfere with the creation of other parts. Next, arrange four small discs in a cross shape with a radius of <span class="variable">drive wheel top radius</span> + <span class="variable">margin</span>. The large disc was created first to allow the small discs to rotate around the origin, not their centers.
 
 <div class="flex justify-center">
 　　<img src="/driven_wheel_round_slots.gif" style="width: 50%">
@@ -175,7 +175,7 @@ First, create a large disc with a radius of 'centers distance' + 'drive wheel to
 
 Next, create rectangular slots (holes).
 
-Arrange 4 rectangles with a width of 'drive wheel bottom radius' + 'pin radius' + 'margin' and a height of 'pin radius' x 2 + 'margin'(to fit the pin) in a cross shape. Finally, group them together and convert to a Hole.
+Arrange 4 rectangles with a width of <span class="variable">drive wheel bottom radius</span> + <span class="variable">pin radius</span> + <span class="variable">margin</span> and a height of <span class="variable">pin radius</span> x 2 + <span class="variable">margin</span>(to fit the pin) in a cross shape. Finally, group them together and convert to a Hole.
 
 <div class="flex justify-center">
 　　<img src="/driven_wheel_box_slots.gif" style="width: 65%">
@@ -187,7 +187,7 @@ Arrange 4 rectangles with a width of 'drive wheel bottom radius' + 'pin radius' 
 
 Next, let's create the body of the driven wheel.
 
-Create a disc with a radius of 'driven wheel radius', and cut out using the combination of circular and rectangular slots created earlier. Then, lift it up to a height of 5mm.
+Create a disc with a radius of <span class="variable">driven wheel radius</span>, and cut out using the combination of circular and rectangular slots created earlier. Then, lift it up to a height of 5mm.
 
 <div class="flex justify-center">
 　　<img src="/driven_wheel.gif" style="width: 70%">
@@ -199,7 +199,7 @@ Create a disc with a radius of 'driven wheel radius', and cut out using the comb
 
 Create a cylinder occupying the space up to just before overlapping with the rectangular slots at the bottom of the driven wheel.
 
-The radius of this cylinder is 'centers distance' - ('drive wheel bottom radius' + 'pin radius' + 'margin'). Next, make a hole in the center of the driven wheel with a radius of 'center pin radius' + ('margin' / 2). Finally, invert it for easier 3D printing so that the larger part faces the base.
+The radius of this cylinder is <span class="variable">centers distance</span> - (<span class="variable">drive wheel bottom radius</span> + <span class="variable">pin radius</span> + <span class="variable">margin</span>). Next, make a hole in the center of the driven wheel with a radius of <span class="variable">center pin radius</span> + (<span class="variable">margin</span> / 2). Finally, invert it for easier 3D printing so that the larger part faces the base.
 
 <div class="flex justify-center">
 　　<img src="/driven_wheel_center.gif" style="width: 55%">
@@ -209,7 +209,7 @@ The radius of this cylinder is 'centers distance' - ('drive wheel bottom radius'
 
 # Creating the Stand
 
-Create a Stand with a width of 'drive wheel bottom radius' + 'centers distance' + 'driven wheel radius' and a length of 'drive wheel bottom radius' x 2. Create a cylinders with a radius of 'center pin radius' and position them at the centers of the drive and driven wheels. Finally, shift it vertically to avoid overlapping with the drive or driven wheels.
+Create a Stand with a width of <span class="variable">drive wheel bottom radius</span> + <span class="variable">centers distance</span> + <span class="variable">driven wheel radius</span> and a length of <span class="variable">drive wheel bottom radius</span> x 2. Create a cylinders with a radius of <span class="variable">center pin radius</span> and position them at the centers of the drive and driven wheels. Finally, shift it vertically to avoid overlapping with the drive or driven wheels.
 
 <div class="flex justify-center">
 　　<img src="/stand.gif" style="width: 70%">

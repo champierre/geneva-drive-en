@@ -1,0 +1,3 @@
+.variable {
+  @apply bg-cyan-400 text-white rounded-full p-1;
+}
